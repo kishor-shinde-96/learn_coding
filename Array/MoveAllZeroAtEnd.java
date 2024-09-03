@@ -1,28 +1,26 @@
 package Array;
-
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.List;
 
 public class MoveAllZeroAtEnd {
     public static void main(String[] args) {
 
-        Integer[] nums = { 1, 0, 6, 8, 0, 5, 0 };
+        int[] nums = { 1, 0, 6, 8, 0, 5, 0 };
 
-        ArrayList<Integer> numList = new ArrayList<>(Arrays.asList(nums));
+        List<Integer> resutList = new ArrayList<>();
+        List<Integer> zeroList = new ArrayList<>();
 
-        ArrayList<Integer> resuList = new ArrayList<>();
-
-        for (Integer num : numList) {
+        for (int num : nums) {
             if (num != 0) {
-                resuList.add(num);
+                resutList.add(num);
+            }else{
+                zeroList.add(num);
             }
         }
 
-        while (resuList.size() < numList.size()) {
-            resuList.add(0);
-        }
+         resutList.addAll(zeroList);
 
-        System.out.println(resuList);
+        System.out.println(resutList);
 
     }
 }

@@ -1,23 +1,18 @@
-
-import java.util.LinkedHashMap;
-import java.util.LinkedHashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.List;
 
 public class Practice {
 
     public static void main(String[] args) {
 
-        String input = "austere private limited";
+        StringBuffer sb = new StringBuffer("Hello");
 
-        Set<Character> ch = new LinkedHashSet<>();
+        sb.append("ll");
 
-        for (char c : input.toCharArray()) {
-
-            ch.add(c);
-
-        }
-        System.out.println(ch);
+        System.out.println(sb);
 
     }
 

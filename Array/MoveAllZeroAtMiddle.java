@@ -1,7 +1,7 @@
 package Array;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.List;
 
 public class MoveAllZeroAtMiddle {
 
@@ -9,13 +9,11 @@ public class MoveAllZeroAtMiddle {
 
         Integer[] nums = { 1, 0, 6, 8, 0, 5, 0 };
 
-        ArrayList<Integer> numList = new ArrayList<>(Arrays.asList(nums));
+        List<Integer> resultList = new ArrayList<>();
 
-        ArrayList<Integer> resultList = new ArrayList<>();
+        List<Integer> zeroList = new ArrayList<>();
 
-        ArrayList<Integer> zeroList = new ArrayList<>();
-
-        for (Integer num : numList) {
+        for (Integer num : nums) {
             if (num != 0) {
                 resultList.add(num);
             } else {

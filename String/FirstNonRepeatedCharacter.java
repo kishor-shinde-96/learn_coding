@@ -1,6 +1,6 @@
 package String;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.HashMap;
+import java.util.Map;
 
 public class FirstNonRepeatedCharacter {
 
@@ -8,19 +8,22 @@ public class FirstNonRepeatedCharacter {
 
         String input = "swiss";
 
-        Set<Character> seen = new HashSet<>();
-        Set<Character> dupSet = new HashSet<>();
+        Map<Character, Integer> charCount = new HashMap<>();
 
+        // Count occurrences of each character
         for (char ch : input.toCharArray()) {
+            charCount.put(ch, charCount.getOrDefault(ch, 0) + 1);
+        }
 
-            if (ch != ' ') {
-
-                if (!seen.add(ch)) {
-                    dupSet.add(ch);
-                }
+        // Find the first non-repeated character
+        for (char ch : input.toCharArray()) {
+            if (charCount.get(ch) == 1) {
+                System.out.println("First non-repeated character is: " + ch);
+                return;
             }
         }
-        System.out.println(dupSet);
-    }
 
+        System.out.println("No non-repeated character found.");
+    }
 }
+

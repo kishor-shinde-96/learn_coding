@@ -7,8 +7,8 @@ public class ArrayIntersection {
 
     public static void main(String[] args) {
 
-        int[] nums1 = { 1, 2, 2, 1 };
-        int[] nums2 = { 2, 2 };
+        int[] nums1 = {1,2,3,2};
+        int[] nums2 = {1,2,4};
 
         Set<Integer> set1 = new HashSet<>();
         Set<Integer> set2 = new HashSet<>();

@@ -15,7 +15,7 @@ public class FindSecondLargest {
             sortedSet.add(num);
         }
 
-        Integer secondLargest = null;
+        Integer secondLargest = 0;
 
         if (sortedSet.size() >= 2) {
             secondLargest = sortedSet.lower(sortedSet.last());
