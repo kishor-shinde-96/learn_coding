@@ -6,7 +6,7 @@ public class FirstNonRepeatedCharacter {
 
     public static void main(String[] args) {
 
-        String input = "swiss";
+        String input = "kishor shinde";
 
         Map<Character, Integer> charCount = new HashMap<>();
 
@@ -15,7 +15,6 @@ public class FirstNonRepeatedCharacter {
             charCount.put(ch, charCount.getOrDefault(ch, 0) + 1);
         }
 
-        // Find the first non-repeated character
         for (char ch : input.toCharArray()) {
             if (charCount.get(ch) == 1) {
                 System.out.println("First non-repeated character is: " + ch);

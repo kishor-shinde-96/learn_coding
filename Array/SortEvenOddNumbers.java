@@ -24,7 +24,7 @@ public class SortEvenOddNumbers {
         Collections.sort(oddNumber);
 
         System.out.println("even :"+ evenNumber.toString());
-        System.out.println(oddNumber);
+        System.out.println(oddNumber.toString());
 
     }
 

@@ -13,6 +13,7 @@ public class QueueSimpleImpl {
         while (!queue.isEmpty()) {
             System.out.println(queue.peek());
             queue.remove();
+            System.out.println(queue.peek());
             
         }
     }

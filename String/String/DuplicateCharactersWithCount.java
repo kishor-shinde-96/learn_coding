@@ -20,13 +20,11 @@ public class DuplicateCharactersWithCount {
 
         for (Map.Entry<Character, Integer> entry : charCountMap.entrySet()) {
 
-           // if (entry.getValue() > 1) {
-               // System.out.println(entry.getKey() + ":" + entry.getValue());
+           if (entry.getValue() > 1) {
+               System.out.println(entry.getKey() + ":" + entry.getValue());
 
-                StringBuilder result = new StringBuilder();
 
-                System.out.print(result.append(entry.getKey()).append(entry.getValue()).toString());
-//}
+}
         }
     }
 }

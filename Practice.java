@@ -1,18 +1,17 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.HashSet;
-import java.util.List;
+import java.util.Optional;
+import java.util.Set;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class Practice {
 
     public static void main(String[] args) {
 
-        StringBuffer sb = new StringBuffer("Hello");
+    int n = 20;
 
-        sb.append("ll");
-
-        System.out.println(sb);
+    
 
     }
 

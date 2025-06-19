@@ -15,15 +15,9 @@ public class ReverseArray {
         for (Integer integer : nums) {
             list.add(integer);
         }
-
-        // for (int i = list.size() - 1; i >= 0; i--) {
-
-        //     System.out.println(list.get(i));
-
-        // }
-
-        Collections.sort(list); // assending
-        System.out.println(list);
+        
+        // Collections.sort(list); // assending
+        // System.out.println(list);
 
         Collections.sort(list, Collections.reverseOrder());  //  desending
         System.out.println(list);
